@@ -2,3 +2,6 @@
   max-width: 1080px;
   margin: 20px auto;
 }
+.container > h1 {
+  color: rgb(55, 155, 250);
+}

@@ -26,7 +26,7 @@ const Forecast = ({ data }) => {
 
   return (
     <>
-      <label className="title">Daily</label>
+      <label className="title">Week Forecast</label>
       <Accordion allowZeroExpanded>
         {data.list.splice(0, 7).map((item, idx) => (
           <AccordionItem key={idx}>
@@ -34,7 +34,7 @@ const Forecast = ({ data }) => {
               <AccordionItemButton>
                 <div className="daily-item">
                   <img
-                    src={`icons/${item.weather[0].icon}.png`}
+                    src={`icons/${item.weather[0].icon}.svg`}
                     alt="weather"
                     className="icon-small"
                   />
